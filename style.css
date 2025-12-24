@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: beige;
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+    
+}
+.main{
+    height: 50%;
+    width:50%;
+    margin:auto;
+    border:2px solid rgb(6, 77, 77);
+    padding: 2rem;
+    display: flex;
+    background-color: rgb(229, 166, 83);
+    border-radius: 30px;
+}
+.enterDiv{
+    height: 100%;
+    width:100%;
+}
+.input{
+    border: none;
+   font-size: 17px;
+   margin: 10px;
+   padding: 5px;
+   border-radius: 10px;
+}
+ 
+.sel{
+    border: none;
+    font-size: 16px;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 10px; 
+    width:220px
+}
+
+button{
+    text-decoration: none;
+    margin: auto;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 7px 13px 7px 13px;
+    background-color: rgb(6, 77, 77);
+    color: white;
+    cursor: pointer;
+}
+
+.showDiv{
+    background-color: rgb(6, 77, 77);
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+@media(max-width:768px) and (orientation: portrait){
+
+  .main{
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+  }
+
+  .enterDiv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .showDiv{
+    width: 100%;
+    height: 120px;
+    margin-top: 1rem;
+    font-size: 24px;
+  }
+
+  button{
+    margin-top: 1rem;
+  }
+}
+
